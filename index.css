@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    padding-top: 65px;
+    background-color: #1C1C1C;
+    min-height: 100%;
+}
+
+.main-container{
+    background-color: #1F2937;
+    width: 550px;
+    padding: 110px 50px 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+h1{
+    color: #fff;
+    margin: 0;
+}
+
+h1 span{
+    display: block;
+    color: #10B981;
+}
+
+p{
+    color: #D5D4D8;
+    margin: 10px 0 50px;
+}
+
+label{
+    color: #ccc;
+}
+
+input#pw-length{
+    width: 50px;
+    height: 35px;
+    color: #ccc;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    background-color:#273549;
+    border: none;
+    border-radius: 3px;
+}
+
+button{
+    margin: 0;
+    padding: 9px 17px 9px 47px;
+    background: #10B981;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.pw-container{
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid #2F3E53;
+}
+
+.pw-container input{
+    width: 44%;
+    height: 40px;
+    background-color:#273549;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #55F991;
+}
+
+.pw-box{
+    letter-spacing: 2px;
+}
+
+.pw-1, .pw-2{
+    margin-bottom: 30px;
+}
+
+.pw-2, .pw-4{
+    float: right;
+}
+
