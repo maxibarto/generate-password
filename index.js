@@ -15,4 +15,5 @@ function generatePassword(){
         pwBoxes[c].value = randomCharacter
         randomCharacter = ""
     }
+    pwLength.value = ""
 }
