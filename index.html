@@ -13,9 +13,11 @@
         <div class="main-container">
             <h1>Generate a <span>random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <label>Length:</label>
-            <input id="pw-length" type="number" min="1" max="20" value=""/>
-            <button id="generate-pw" onclick="generatePassword()">Generate passwords</button>
+            <div class="controls">
+                <label>Length:</label>
+                <input id="pw-length" type="number" min="1" max="20" value=""/>
+                <button id="generate-pw" onclick="generatePassword()">Generate passwords</button>
+            </div>
             <ul class="pw-container">
                 <li>
                     <input class ="pw-box" type="text" placeholder="..." readonly value=""/>

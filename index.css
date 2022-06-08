@@ -30,14 +30,20 @@ p{
     margin: 10px 0 50px;
 }
 
-label{
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+.controls label{
     color: #ccc;
+    margin-right: 5px;
 }
 
 input#pw-length{
     width: 50px;
     height: 33px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     color: #ccc;
     margin: 0;
     margin-right: 10px;
@@ -57,6 +63,15 @@ button#generate-pw{
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+button#generate-pw:hover{
+    background: #1ad395;
+}
+
+button#generate-pw:active{
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 button#generate-pw::before{
@@ -85,6 +100,10 @@ ul.pw-container li{
 ul.pw-container li i{
     color:#10B981;
     cursor: pointer;
+}
+
+ul.pw-container li i:hover{
+    color:#1ad395;
 }
 
 input.pw-box{
