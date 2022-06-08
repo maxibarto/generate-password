@@ -1,4 +1,5 @@
 html, body {
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 30px;
@@ -35,7 +36,8 @@ label{
 
 input#pw-length{
     width: 50px;
-    height: 35px;
+    height: 33px;
+    vertical-align: bottom;
     color: #ccc;
     margin: 0;
     margin-right: 10px;
@@ -47,43 +49,65 @@ input#pw-length{
     border-radius: 3px;
 }
 
-button{
+button#generate-pw{
     margin: 0;
-    padding: 9px 17px 9px 47px;
+    padding: 9px;
     background: #10B981;
     color: #fff;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
-.pw-container{
-    margin-top: 35px;
-    padding-top: 35px;
+button#generate-pw::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e7";
+    margin-right: 9px;
+}
+
+ul.pw-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 35px 0 0 0;
+    padding: 35px 0 0 0;
     border-top: 1px solid #2F3E53;
 }
 
-.pw-container input{
-    width: 44%;
+ul.pw-container li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+    margin-bottom: 10px;
+}
+
+ul.pw-container li i{
+    color:#10B981;
+    cursor: pointer;
+}
+
+input.pw-box{
+    width: 95%;
     height: 40px;
+    margin-right: 5px;
+    color: #55F991;
     background-color:#273549;
     border: none;
     border-radius: 6px;
     text-align: center;
     font-weight: 500;
+    letter-spacing: 2px;
     font-size: 16px;
     line-height: 32px;
-    color: #55F991;
 }
 
-.pw-box{
-    letter-spacing: 2px;
-}
 
-.pw-1, .pw-2{
+/* .pw-1, .pw-2{
     margin-bottom: 30px;
 }
 
 .pw-2, .pw-4{
     float: right;
-}
+} */
 

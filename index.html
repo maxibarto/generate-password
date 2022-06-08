@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1e56d32f2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <title>Generate random password</title>
 </head>
@@ -15,14 +16,25 @@
             <label>Length:</label>
             <input id="pw-length" type="number" min="1" max="20" value=""/>
             <button id="generate-pw" onclick="generatePassword()">Generate passwords</button>
-            <div class="pw-container">
-                <input class ="pw-box pw-1" type="text" placeholder="..." readonly value=""/>
-                <input class ="pw-box pw-2" type="text" placeholder="..." readonly value=""/>
-                <input class ="pw-box pw-3" type="text" placeholder="..." readonly value=""/>
-                <input class ="pw-box pw-4" type="text" placeholder="..." readonly value=""/>
-            </div>
+            <ul class="pw-container">
+                <li>
+                    <input class ="pw-box" type="text" placeholder="..." readonly value=""/>
+                    <i class="fa-solid fa-copy"></i>
+                </li>
+                <li>
+                    <input class ="pw-box" type="text" placeholder="..." readonly value=""/>
+                    <i class="fa-solid fa-copy"></i>
+                </li>
+                <li>
+                    <input class ="pw-box" type="text" placeholder="..." readonly value=""/>
+                    <i class="fa-solid fa-copy"></i>
+                </li>
+                <li>
+                    <input class ="pw-box" type="text" placeholder="..." readonly value=""/>
+                    <i class="fa-solid fa-copy"></i>
+                </li>
+            </ul>
         </div>
-        
         <script src="index.js"></script>
     </body>
 </body>
