@@ -109,24 +109,6 @@ ul.pw-container li{
     margin-bottom: 10px;
 }
 
-ul.pw-container li i{
-    color:#273549;
-}
-
-ul.pw-container li i.enabled{
-    color:#10B981;
-    cursor: pointer;
-}
-
-ul.pw-container li i.enabled:hover{
-    color:#1ad395;
-}
-
-ul.pw-container li i.enabled:active{
-    color:#1ad395;
-    padding-top: 1px;
-}
-
 input.pw-box{
     width: 95%;
     height: 40px;
@@ -141,13 +123,4 @@ input.pw-box{
     font-size: 16px;
     line-height: 32px;
 }
-
-
-/* .pw-1, .pw-2{
-    margin-bottom: 30px;
-}
-
-.pw-2, .pw-4{
-    float: right;
-} */
 
