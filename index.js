@@ -6,7 +6,6 @@ let randomCharacter = ""
 
 
 function generatePassword(){
-    console.log(pwLength.value)
     if(pwLength.value !== ""){
         for(let c = 0; c < pwBoxes.length; c++){
             for(let i = 0; i < pwLength.value; i++){
@@ -21,4 +20,15 @@ function generatePassword(){
     } else{
         document.getElementById("alert-length").className = 'alert-message'
     }
+}
+
+//Copy password
+for(let i = 0; i < pwBoxes.length; i++ ){
+    pwBoxes[i].addEventListener("click", function(){ 
+        navigator.clipboard.writeText(this.value).then(function() {
+            alert('Password copied to the clipboard!')
+        }, function(err) {
+            alert('Could not copy text: ', err)
+        });
+    });
 }
