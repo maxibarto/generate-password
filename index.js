@@ -3,7 +3,6 @@ let generatePw = document.getElementById("generate-pw")
 let pwLength = document.getElementById("pw-length")
 let pwBoxes = document.querySelectorAll(".pw-box")
 let randomCharacter = ""
-let copyPw = document.getElementsByClassName("copy-pw")
 
 
 function generatePassword(){
@@ -15,7 +14,6 @@ function generatePassword(){
                 randomCharacter += pwCharacters[getRandomCharacter]
             }
             pwBoxes[c].value = randomCharacter
-            copyPw[c].classList.add("enabled")
             randomCharacter = ""
         }
         pwLength.value = ""
