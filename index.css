@@ -79,6 +79,18 @@ button#generate-pw::before{
     margin-right: 9px;
 }
 
+#alert-length{
+    color: #1ad395;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    display: none;
+}
+
+.alert-message{
+    display: block !important;
+}
+
 ul.pw-container{
     display: flex;
     flex-wrap: wrap;
@@ -98,15 +110,19 @@ ul.pw-container li{
 }
 
 ul.pw-container li i{
+    color:#273549;
+}
+
+ul.pw-container li i.enabled{
     color:#10B981;
     cursor: pointer;
 }
 
-ul.pw-container li i:hover{
+ul.pw-container li i.enabled:hover{
     color:#1ad395;
 }
 
-ul.pw-container li i:active{
+ul.pw-container li i.enabled:active{
     color:#1ad395;
     padding-top: 1px;
 }
