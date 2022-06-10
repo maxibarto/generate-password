@@ -24,7 +24,3 @@ function generatePassword(){
         document.getElementById("alert-length").className = 'alert-message'
     }
 }
-
-function copyPassword(){
-
-}
